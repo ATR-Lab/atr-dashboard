@@ -35,7 +35,7 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({ targetDate, headerText 
   };
 
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
-  const [bgColor, setBgColor] = useState(getRandomColor());
+  const [bgColor, ] = useState(getRandomColor());
 
   useEffect(() => {
     const timerId = setTimeout(() => {
