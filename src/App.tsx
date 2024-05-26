@@ -11,6 +11,7 @@ function App() {
       <div className='right_panel'>
         <CountdownTimer targetDate="2024-09-15T23:59:59" headerText="ICRA Conference" />
         <CountdownTimer targetDate="2024-10-01T23:59:59" headerText="HRI Conference" />
+        <CountdownTimer targetDate="2024-07-01T23:59:59" headerText="HRI Conference" />
       </div>
     </>
   )
