@@ -49,16 +49,20 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({ targetDate, headerText 
     container: {
       textAlign: 'center' as 'center',
       backgroundColor: bgColor,
-      padding: '1px',
+      padding: '10px 10px 40px 10px',
       borderRadius: '10px',
       margin: '10px',
     },
+    text: {
+      margin: '-10px',
+    }
   };
 
   return (
     <div style={styles.container}>
       <h2>{headerText}</h2>
-      <h1>{`${timeLeft.days}d ${timeLeft.hours}h ${timeLeft.minutes}m ${timeLeft.seconds}s`}</h1>
+      <h1 style={styles.text}>{`${timeLeft.days}d ${timeLeft.hours}h ${timeLeft.minutes}m ${timeLeft.seconds}s`}</h1>
+      {/* <p>test</p> */}
     </div>
   );
 };
